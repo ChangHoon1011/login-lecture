@@ -19,8 +19,9 @@ function login(){
         headers:{
             "Content-Type":"application/json",
         },
-        body: JSON.stringify(req)
-    });
+        body: JSON.stringify(req),
+    }).then((res)=> console.log(res.json()))
+    .then((res)=>console.log(res)); 
 }
 console.log(id);
 console.log("hello");
